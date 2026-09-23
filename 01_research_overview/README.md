@@ -30,7 +30,7 @@ For each company, year, and risk domain:
 
 The source files also retain term-level ratios and TF-IDF fields. The documented combined-panel calculation uses term counts and the original denominator.
 
-Five source files describe their counting mode as sentence frequency. Summing counts across terms can count one sentence more than once. The domain count should therefore not be relabelled as a deduplicated count of risk sentences.
+The preserved export notes for five source files describe their counting mode as sentence frequency. These definitions are retained in the data dictionary after removal of the preambles from the published CSVs. Summing counts across terms can count one sentence more than once. The domain count should therefore not be relabelled as a deduplicated count of risk sentences.
 
 ## From the base panel to the estimation sample
 

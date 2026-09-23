@@ -35,14 +35,25 @@ Each domain CSV contains the four common fields followed by term-level `*_count`
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Combined panel | 1 | 31,321 | 5,018 | 18 | — |
 | Political | 1 | 31,321 | 5,018 | 67 | 21 |
-| Environmental | 16 | 27,817 | 4,451 | 229 | 75 |
-| Financial | 16 | 27,817 | 4,451 | 325 | 107 |
-| Supply and demand | 16 | 27,817 | 4,451 | 292 | 96 |
-| Logistics | 16 | 27,817 | 4,451 | 244 | 80 |
+| Environmental | 1 | 27,817 | 4,451 | 229 | 75 |
+| Financial | 1 | 27,817 | 4,451 | 325 | 107 |
+| Supply and demand | 1 | 27,817 | 4,451 | 292 | 96 |
+| Logistics | 1 | 27,817 | 4,451 | 244 | 80 |
 | System | 1 | 31,321 | 5,018 | 268 | 88 |
-| Operational | 16 | 27,817 | 4,451 | 121 | 39 |
+| Operational | 1 | 27,817 | 4,451 | 121 | 39 |
 
-Header positions are one-based and were checked against the current file contents. Five source files contain introductory notes before the header on row 16. Some embedded import instructions use an older header position; use the actual header or the supplied reader.
+Header positions are one-based. All current release CSVs begin with the header on row 1. In the preserved originals, the environmental, financial, supply and demand, logistics, and operational files have 15 lines of export notes before the header. Those notes, including machine-specific import commands and export timestamps, are omitted from the current CSV copies.
+
+### Definitions retained from the original export notes
+
+The five original export preambles label the counting mode as **sentence frequency**. Their field definitions are:
+
+- `code`: company code; `industry`: industry; `year`: accounting year; `denom`: the original text denominator.
+- `*_count`: the original term count under the export counting procedure.
+- `*_ratio = *_count / denom`.
+- `*_tfidf = *_ratio * idf`, where `idf = ln((N + 1) / (df + 1)) + 1`, `N` is the number of exported documents and `df` is the number containing the term.
+
+These definitions are transcribed from the original notes; no counts, ratios or TF-IDF values were recalculated. Summing counts across terms can count a sentence more than once. The aggregate is not a deduplicated count of risk sentences.
 
 ## Missing values and coverage
 

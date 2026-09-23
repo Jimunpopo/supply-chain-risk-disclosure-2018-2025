@@ -34,14 +34,14 @@ for row in iter_risk_rows(path):
 python 05_reading_tools/verify_files.py
 ```
 
-The script compares sizes and SHA-256 digests with `04_data_verification/file_manifest.json`. It checks the nine data files and the original audit report.
+The script compares current release sizes and SHA-256 digests with `04_data_verification/file_manifest.json`. It checks the nine data files and the original audit report, and verifies the CSV data-section hashes against those recorded for the originals. Original full-file hashes remain in separate `source_*` fields. The command does not require local copies of the originals.
 
 ## Read the financial workbook
 
 Use `sheet1` in `03_financial_control_data/financial_control_variables.xlsx`. Row 1 contains field codes; rows 2 and 3 contain labels and units. Data begin on row 4. Exclude the two descriptive rows from the observations before matching, and preserve company codes as six-digit strings.
 
-These tools read and verify the source files. They do not merge controls or estimate models.
+These tools read and verify the release files. They do not merge controls or estimate models.
 
 ## Lossless domain archives
 
-The reader accepts the ZIP files directly. To use the raw CSVs in other software, extract each ZIP in its current folder. The verification tool supports both the distributed archives and the extracted CSVs. Original CSV values, row order, column labels, and introductory notes are unchanged.
+The reader accepts the ZIP files directly. To use the raw CSVs in other software, extract each ZIP in its current folder. The verification tool supports both the distributed archives and the extracted CSVs. CSV values, row order, column labels, and missing cells are unchanged. Five domain CSVs omit their 15-line export preambles, so all released risk CSVs have headers on row 1. The reader remains compatible with original CSVs that contain preambles.

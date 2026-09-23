@@ -1,6 +1,6 @@
 # Source File Register
 
-Repository filenames were standardised for navigation. Uncompressed file contents were retained byte for byte. Domain CSVs are packaged in lossless ZIP archives. The table below preserves the exact source filenames.
+Repository filenames were standardised for navigation. Five domain CSVs now omit their 15-line export preambles; all table headers and data rows are retained byte for byte. Other source files remain unchanged. Domain CSVs are packaged in lossless ZIP archives. The table below preserves the exact source filenames.
 
 | Repository file | Original filename |
 | --- | --- |
@@ -15,4 +15,4 @@ Repository filenames were standardised for navigation. Uncompressed file content
 | [financial_control_variables.xlsx](../03_financial_control_data/financial_control_variables.xlsx) | 常用变量查询（年度2.0）.xlsx |
 | [Audit_Report_2026-09-12_Chinese.md](../04_data_verification/original_report/Audit_Report_2026-09-12_Chinese.md) | CLPN_reproduction_audit_report.md |
 
-The [manifest](../04_data_verification/file_manifest.json) records the source file sizes and SHA-256 checksums. The original audit report is retained as a dated historical document.
+The [manifest](../04_data_verification/file_manifest.json) records both original and current release file sizes and SHA-256 checksums, together with CSV data-section checksums. The original audit report is retained as a dated historical document.

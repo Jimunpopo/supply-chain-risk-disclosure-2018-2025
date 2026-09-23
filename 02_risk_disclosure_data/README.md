@@ -25,11 +25,12 @@ The panel contains 31,321 observations, 5,018 companies, and 18 columns. It prov
 - Join observations by `code` and `year`.
 - Keep company codes as strings to preserve leading zeros.
 - Preserve the distinction between missing observations and zero counts.
-- The political and system files have headers on row 1. The other five domain files have headers on row 16.
-- Original Chinese term labels, introductory notes, and numerical values remain unchanged.
+- All published risk CSVs have their headers on row 1.
+- Five domain CSVs omit the original 15-line export preambles. Original Chinese term labels, column and row order, numerical values, and missing cells remain unchanged.
+- Definitions previously included in the preambles are documented in the data dictionary.
 
 See the [data dictionary](../01_research_overview/DATA_DICTIONARY.md) and [reading tools](../05_reading_tools/README.md) for details.
 
 ## ZIP format
 
-Each domain archive contains one CSV. Extract it to the same folder before analysis, or pass the ZIP path directly to the reading tool. Compression does not change any CSV content; the manifest records both archive and uncompressed-file hashes.
+Each domain archive contains one CSV. Extract it to the same folder before analysis, or pass the ZIP path directly to the reading tool. Compression is lossless. The manifest records archive hashes, current uncompressed-file hashes, original-file hashes, and CSV data-section hashes. The documented preamble removal is a separate formatting step.

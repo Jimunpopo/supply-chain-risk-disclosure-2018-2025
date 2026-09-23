@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "prepared_on": "2026-09-23",
-  "description": "Eight risk CSVs, one financial controls workbook, and one historical audit report. File contents are preserved.",
+  "description": "Eight risk CSVs, one financial controls workbook, and one historical audit report. Five published domain CSVs omit their 15-line export preambles. All CSV headers and data rows are unchanged.",
   "files": [
     {
       "path": "02_risk_disclosure_data/01_combined_panel/supply_chain_risk_panel_2018_2025.csv",
@@ -44,7 +44,13 @@
         "system_risk_ratio",
         "operational_count_sum",
         "operational_risk_ratio"
-      ]
+      ],
+      "source_sha256": "9666d0d90162da995568a32b817ed0a1731f234d8601e0e61b57794b02a51163",
+      "source_size_bytes": 8342263,
+      "transformation": "none",
+      "source_header_row": 1,
+      "source_data_section_sha256": "9c7b73249ff64caab0fbc8d705fcad7ccf4d2e46664d13b9a2a65645929d7222",
+      "data_section_sha256": "9c7b73249ff64caab0fbc8d705fcad7ccf4d2e46664d13b9a2a65645929d7222"
     },
     {
       "path": "02_risk_disclosure_data/02_domain_data/political_risk_2018_2025.csv",
@@ -139,16 +145,22 @@
       ],
       "archive_path": "02_risk_disclosure_data/02_domain_data/political_risk_2018_2025.csv.zip",
       "archive_sha256": "ad2d9e4b48153c6266055f4e757d71eb6d787eb482ccdc61dd13136abb514fe6",
-      "archive_size_bytes": 2325457
+      "archive_size_bytes": 2325457,
+      "source_sha256": "ebfac8fa937c11ecf811ed9ca5aa87ed1a7359218c1dec481eda4a95f05e6db5",
+      "source_size_bytes": 9580322,
+      "transformation": "none",
+      "source_header_row": 1,
+      "source_data_section_sha256": "ebfac8fa937c11ecf811ed9ca5aa87ed1a7359218c1dec481eda4a95f05e6db5",
+      "data_section_sha256": "ebfac8fa937c11ecf811ed9ca5aa87ed1a7359218c1dec481eda4a95f05e6db5"
     },
     {
       "path": "02_risk_disclosure_data/02_domain_data/environmental_risk_2018_2025.csv",
       "original_filename": "供应链环境风险补词——去金融银行业电信以及服务业18-25.csv",
       "role": "Environmental risk",
-      "size_bytes": 23415018,
-      "sha256": "1a4b67d8f5cac653c62c4eed6d8027d990409e94e8c8014ab2256a27f19e175d",
+      "size_bytes": 23414420,
+      "sha256": "3fe5c3c3733bb454d06266ecf9ebfe776cd3bd1cfa954b0d5314beebeed04c97",
       "encoding": "utf-8-sig",
-      "header_row": 16,
+      "header_row": 1,
       "rows": 27817,
       "companies": 4451,
       "columns": 229,
@@ -395,17 +407,24 @@
         "不可抗力_tfidf"
       ],
       "archive_path": "02_risk_disclosure_data/02_domain_data/environmental_risk_2018_2025.csv.zip",
-      "archive_sha256": "77886fde85906f826fe1b09c8d3174e1083659a8d4fc6c68b9f7580b49c5e076",
-      "archive_size_bytes": 4922731
+      "archive_sha256": "dccf5dd7ce97d18ce558fe128c15f018bfd1ff3393097da58481b1af1dc5f4b3",
+      "archive_size_bytes": 4735555,
+      "source_sha256": "1a4b67d8f5cac653c62c4eed6d8027d990409e94e8c8014ab2256a27f19e175d",
+      "source_size_bytes": 23415018,
+      "transformation": "removed_export_preamble_only",
+      "source_header_row": 16,
+      "source_data_section_sha256": "3fe5c3c3733bb454d06266ecf9ebfe776cd3bd1cfa954b0d5314beebeed04c97",
+      "data_section_sha256": "3fe5c3c3733bb454d06266ecf9ebfe776cd3bd1cfa954b0d5314beebeed04c97",
+      "removed_preamble_lines": 15
     },
     {
       "path": "02_risk_disclosure_data/02_domain_data/financial_risk_2018_2025.csv",
       "original_filename": "供应链财务风险补词——去金融银行业电信以及服务业18-25.csv",
       "role": "Financial risk disclosure",
-      "size_bytes": 76248551,
-      "sha256": "3595bab10e3b71463d6b9ded3d05dfb4742b4232c4baa46bf794c8ff60c7ef4e",
+      "size_bytes": 76247953,
+      "sha256": "6907691da8b71f42829fdeb4a2990fd3d1b823e7071476cfa14db9132efa8955",
       "encoding": "utf-8-sig",
-      "header_row": 16,
+      "header_row": 1,
       "rows": 27817,
       "companies": 4451,
       "columns": 325,
@@ -748,17 +767,24 @@
         "控制关系_tfidf"
       ],
       "archive_path": "02_risk_disclosure_data/02_domain_data/financial_risk_2018_2025.csv.zip",
-      "archive_sha256": "440a5eac701568d6f1e8b4b53078e49f4583665bdaf666a35ed0bdf1c91a76e5",
-      "archive_size_bytes": 23756157
+      "archive_sha256": "d2b1b95ab1d5dd2a241c35a7dc240cb453913d8cf9be8e9c99c92d8c135d0650",
+      "archive_size_bytes": 23454040,
+      "source_sha256": "3595bab10e3b71463d6b9ded3d05dfb4742b4232c4baa46bf794c8ff60c7ef4e",
+      "source_size_bytes": 76248551,
+      "transformation": "removed_export_preamble_only",
+      "source_header_row": 16,
+      "source_data_section_sha256": "6907691da8b71f42829fdeb4a2990fd3d1b823e7071476cfa14db9132efa8955",
+      "data_section_sha256": "6907691da8b71f42829fdeb4a2990fd3d1b823e7071476cfa14db9132efa8955",
+      "removed_preamble_lines": 15
     },
     {
       "path": "02_risk_disclosure_data/02_domain_data/supply_demand_risk_2018_2025.csv",
       "original_filename": "供应链供需风险补词——去金融银行业电信以及服务业18-25.csv",
       "role": "Supply and demand risk",
-      "size_bytes": 39282978,
-      "sha256": "337610e7152dfd63f2227fed1bc83ad872733810325b33077ea1e5077a158d6f",
+      "size_bytes": 39282380,
+      "sha256": "ba31d647e1eae19956f10cf43bcda5d6aa8169b4431837a4c7b998d6fd425ded",
       "encoding": "utf-8-sig",
-      "header_row": 16,
+      "header_row": 1,
       "rows": 27817,
       "companies": 4451,
       "columns": 292,
@@ -1068,17 +1094,24 @@
         "下行_tfidf"
       ],
       "archive_path": "02_risk_disclosure_data/02_domain_data/supply_demand_risk_2018_2025.csv.zip",
-      "archive_sha256": "24e0cbc5745c34810a197609aae8cfc6ab127b0de4c73efa0f555cec615b29bc",
-      "archive_size_bytes": 10466116
+      "archive_sha256": "7668402a09cd7983464f51046c0ed147a63f8792d594d9c8da0c1787b342b2c6",
+      "archive_size_bytes": 10195227,
+      "source_sha256": "337610e7152dfd63f2227fed1bc83ad872733810325b33077ea1e5077a158d6f",
+      "source_size_bytes": 39282978,
+      "transformation": "removed_export_preamble_only",
+      "source_header_row": 16,
+      "source_data_section_sha256": "ba31d647e1eae19956f10cf43bcda5d6aa8169b4431837a4c7b998d6fd425ded",
+      "data_section_sha256": "ba31d647e1eae19956f10cf43bcda5d6aa8169b4431837a4c7b998d6fd425ded",
+      "removed_preamble_lines": 15
     },
     {
       "path": "02_risk_disclosure_data/02_domain_data/logistics_risk_2018_2025.csv",
       "original_filename": "供应链物流风险补词v2——去金融银行业电信以及服务业18-25.csv",
       "role": "Logistics risk",
-      "size_bytes": 27950302,
-      "sha256": "2564ea097ecaffac4765ad2f0a4853b5425b04b5699aa04edad2475917999723",
+      "size_bytes": 27949702,
+      "sha256": "d148fec425f21d3a9ac8a27e253a43bf09958075cafc6a319013cd9089d772b8",
       "encoding": "utf-8-sig",
-      "header_row": 16,
+      "header_row": 1,
       "rows": 27817,
       "companies": 4451,
       "columns": 244,
@@ -1340,8 +1373,15 @@
         "崩溃_tfidf"
       ],
       "archive_path": "02_risk_disclosure_data/02_domain_data/logistics_risk_2018_2025.csv.zip",
-      "archive_sha256": "8028b4bd0e975c9f862a3d0f87632a2c4b227878dac5c4f26356c4467973aa44",
-      "archive_size_bytes": 6674200
+      "archive_sha256": "eecd7fb21255edda45bf3b83e2fa1b044b74881ba03b8fdfd1ad31c6bea783f6",
+      "archive_size_bytes": 6459517,
+      "source_sha256": "2564ea097ecaffac4765ad2f0a4853b5425b04b5699aa04edad2475917999723",
+      "source_size_bytes": 27950302,
+      "transformation": "removed_export_preamble_only",
+      "source_header_row": 16,
+      "source_data_section_sha256": "d148fec425f21d3a9ac8a27e253a43bf09958075cafc6a319013cd9089d772b8",
+      "data_section_sha256": "d148fec425f21d3a9ac8a27e253a43bf09958075cafc6a319013cd9089d772b8",
+      "removed_preamble_lines": 15
     },
     {
       "path": "02_risk_disclosure_data/02_domain_data/system_risk_2018_2025.csv",
@@ -1637,16 +1677,22 @@
       ],
       "archive_path": "02_risk_disclosure_data/02_domain_data/system_risk_2018_2025.csv.zip",
       "archive_sha256": "cdd38ced8d139f008b1ea65e858b01d926a58a7b8aa101f90fadc2171959f825",
-      "archive_size_bytes": 16043082
+      "archive_size_bytes": 16043082,
+      "source_sha256": "c5793d7f67bb561550831ea6fd6abf78377875545bc7ce9d74cf4d7f0fde97fd",
+      "source_size_bytes": 56414483,
+      "transformation": "none",
+      "source_header_row": 1,
+      "source_data_section_sha256": "c5793d7f67bb561550831ea6fd6abf78377875545bc7ce9d74cf4d7f0fde97fd",
+      "data_section_sha256": "c5793d7f67bb561550831ea6fd6abf78377875545bc7ce9d74cf4d7f0fde97fd"
     },
     {
       "path": "02_risk_disclosure_data/02_domain_data/operational_risk_2018_2025.csv",
       "original_filename": "供应链运营风险补词——去金融银行业电信以及服务业18-25.csv",
       "role": "Operational risk",
-      "size_bytes": 15060654,
-      "sha256": "cbebf7f6af7e8dd6b2adf3d6364bf092058bc24ad33a8cca493aa106a940cb9e",
+      "size_bytes": 15060068,
+      "sha256": "343f68f7a7cf3f15d3a28b251b83d97087ed4621557cc1073dbf032ad19a59ce",
       "encoding": "utf-8-sig",
-      "header_row": 16,
+      "header_row": 1,
       "rows": 27817,
       "companies": 4451,
       "columns": 121,
@@ -1785,8 +1831,15 @@
         "难点_tfidf"
       ],
       "archive_path": "02_risk_disclosure_data/02_domain_data/operational_risk_2018_2025.csv.zip",
-      "archive_sha256": "685f033ed3f07b793c0b84d356ccfb1febe6372cad0167a78b53644b57293ad9",
-      "archive_size_bytes": 3636453
+      "archive_sha256": "a29773b8145d2fb126ae9f2a0b8728fd49541d203195552178b42c7822812986",
+      "archive_size_bytes": 3526327,
+      "source_sha256": "cbebf7f6af7e8dd6b2adf3d6364bf092058bc24ad33a8cca493aa106a940cb9e",
+      "source_size_bytes": 15060654,
+      "transformation": "removed_export_preamble_only",
+      "source_header_row": 16,
+      "source_data_section_sha256": "343f68f7a7cf3f15d3a28b251b83d97087ed4621557cc1073dbf032ad19a59ce",
+      "data_section_sha256": "343f68f7a7cf3f15d3a28b251b83d97087ed4621557cc1073dbf032ad19a59ce",
+      "removed_preamble_lines": 15
     },
     {
       "path": "03_financial_control_data/financial_control_variables.xlsx",
@@ -1800,15 +1853,22 @@
       "unit_row": 3,
       "first_data_row": 4,
       "company_key": "Stkcd",
-      "year_key": "accper"
+      "year_key": "accper",
+      "source_sha256": "6c7ca338c3d074f379994a634b2667c533e5b4a6bf64f4ef3f135eecc5818ca2",
+      "source_size_bytes": 7379123,
+      "transformation": "none"
     },
     {
       "path": "04_data_verification/original_report/Audit_Report_2026-09-12_Chinese.md",
       "original_filename": "CLPN_reproduction_audit_report.md",
       "role": "Historical audit report",
       "size_bytes": 23633,
-      "sha256": "06e738d64cb7ccfbf206f7a2b8921a31053c9a171abc92e72fb191dbc350aef5"
+      "sha256": "06e738d64cb7ccfbf206f7a2b8921a31053c9a171abc92e72fb191dbc350aef5",
+      "source_sha256": "06e738d64cb7ccfbf206f7a2b8921a31053c9a171abc92e72fb191dbc350aef5",
+      "source_size_bytes": 23633,
+      "transformation": "none"
     }
   ],
-  "distribution_note": "Domain CSVs are distributed in lossless ZIP archives. The original CSV sizes and SHA-256 hashes refer to the uncompressed bytes."
+  "distribution_note": "Domain CSVs are distributed in lossless ZIP archives. sha256 and size_bytes describe the current uncompressed release file; source_sha256 and source_size_bytes describe the preserved original. For CSVs, source_data_section_sha256 and data_section_sha256 hash the exact bytes from the column header through the end of the file, excluding a leading UTF-8 BOM when present.",
+  "release_updated_on": "2026-09-23"
 }

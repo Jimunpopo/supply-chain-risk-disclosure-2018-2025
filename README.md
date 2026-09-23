@@ -35,7 +35,7 @@ The seven domains remain separate variables in the cross-lagged panel network (C
 
 ## Reading and verification
 
-Source CSVs retain their original contents, including Chinese term labels and, in five files, introductory notes. The reading tool locates the actual header and preserves leading zeros in company codes.
+All published risk CSVs begin with their column header on row 1. Export preambles were removed from five domain files; column labels and every data row remain unchanged. Counting definitions are retained in the [data dictionary](01_research_overview/DATA_DICTIONARY.md). The reading tool preserves leading zeros in company codes. See the [release notes](04_data_verification/RELEASE_NOTES.md) for the exact scope of this formatting update.
 
 Run these commands from the repository root:
 
@@ -48,6 +48,6 @@ The tools use the Python standard library. See the [reading guide](05_reading_to
 
 ## Scope of this release
 
-This release contains **eight risk CSVs, one financial workbook, supporting documentation, and two reading and verification tools**. The seven domain CSVs are supplied in lossless ZIP archives to meet browser upload limits. After extraction, all nine data files preserve the source bytes. English filenames support navigation, with original filenames recorded in the [source file register](01_research_overview/SOURCE_FILES.md).
+This release contains **eight risk CSVs, one financial workbook, supporting documentation, and two reading and verification tools**. The seven domain CSVs are supplied in lossless ZIP archives to meet browser upload limits. After extraction, the five reformatted CSVs preserve the exact source bytes from the column header onward. The other three risk CSVs and the financial workbook remain byte-identical to their originals. English filenames support navigation, with original filenames recorded in the [source file register](01_research_overview/SOURCE_FILES.md).
 
 The historical audit is dated **12 September 2026**. Its comments on thesis wording refer to the version reviewed on that date. This release provides source data and the audit record; it does not include the full regression code or all model output files mentioned in that report.

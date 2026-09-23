@@ -2,16 +2,18 @@
 
 ## Checks for this release
 
-The following checks were completed when organising the repository on 23 September 2026:
+The original release was organised on 23 September 2026. The checks below also cover the documented CSV formatting update; see the [release notes](RELEASE_NOTES.md).
 
 | Check | Result |
 | --- | --- |
-| Source preservation | Nine data files and the historical report match their source SHA-256 hashes |
+| Source preservation | Preserved local originals match their original hashes; all released CSV table sections match the original table sections byte for byte |
+| Unchanged release files | The combined panel, political and system CSVs, financial workbook, and historical audit report remain byte-identical to their originals |
+| Formatting changes | Five domain CSVs omit 15 export-note lines; no data row or column was edited |
 | Combined panel dimensions | 31,321 observations, 5,018 companies, 18 columns |
 | CSV year coverage | All eight risk CSVs cover 2018–2025 |
 | Company–year key uniqueness | No duplicate `code + year` keys within any risk CSV |
 | CSV structure | Data rows have the expected number of fields |
-| Header location | Row 1 for the panel, political and system files; row 16 for the other five domains |
+| Header location | Row 1 for all eight published risk CSVs |
 | Reading utility | Reads all eight files and retains six-digit company codes |
 
 These checks verify the archived files and their structure. They do not constitute a new estimation of the CLPN models.
@@ -37,7 +39,7 @@ The report is retained without edits. It examined the data and thesis draft avai
 
 ## File manifest
 
-[file_manifest.json](file_manifest.json) records repository paths, original filenames, file sizes, and SHA-256 digests. For CSVs, it also records header positions, full field names, row and company counts, years, and duplicate-key counts.
+[file_manifest.json](file_manifest.json) records repository paths, original filenames, current release sizes and SHA-256 digests, and original full-file hashes in separate `source_*` fields. For CSVs, it also records original and current header positions, exact data-section hashes, full field names, row and company counts, years, and duplicate-key counts. A data section includes the column header and all subsequent bytes, excluding a leading UTF-8 BOM when present.
 
 From the repository root:
 
@@ -45,6 +47,6 @@ From the repository root:
 python 05_reading_tools/verify_files.py
 ```
 
-The command checks ten source files and exits with a non-zero status if a file is missing or has changed. It does not modify the data.
+The command checks ten release files and exits with a non-zero status if a file is missing or differs from the release manifest. It does not modify the data.
 
-Domain CSVs are distributed in lossless ZIP archives. The verification command checks both archive hashes and uncompressed CSV hashes. It also accepts CSVs extracted beside their archives.
+Domain CSVs are distributed in lossless ZIP archives. The verification command checks archive hashes, uncompressed CSV hashes, and data-section hashes. If an archive and an extracted CSV are both present, both are checked.
