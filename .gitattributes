@@ -1,0 +1,7 @@
+* text=auto
+*.csv -text
+*.xlsx binary
+04_data_verification/original_report/*.md -text
+*.py text eol=lf
+*.json text eol=lf
+*.zip binary
