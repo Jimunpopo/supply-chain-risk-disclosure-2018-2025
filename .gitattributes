@@ -5,3 +5,4 @@
 *.py text eol=lf
 *.json text eol=lf
 *.zip binary
+06_risk_dictionaries/**/*.txt -text

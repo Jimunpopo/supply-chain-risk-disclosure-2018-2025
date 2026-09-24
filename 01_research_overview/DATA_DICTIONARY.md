@@ -55,6 +55,10 @@ The five original export preambles label the counting mode as **sentence frequen
 
 These definitions are transcribed from the original notes; no counts, ratios or TF-IDF values were recalculated. Summing counts across terms can count a sentence more than once. The aggregate is not a deduplicated count of risk sentences.
 
+## Supplied seed and risk dictionaries
+
+The [dictionary catalogue](../06_risk_dictionaries/README.md) provides unchanged text files for five domains, separated into seed terms and risk terms. Environmental, supply and demand, logistics and system risk-term sets match the corresponding CSV columns. The supplied financial risk list has 67 unique terms, while the financial CSV contains 107 term-count columns. The [term comparison](../06_risk_dictionaries/TERM_ALIGNMENT.md) lists the 40 differences and explains the comparison rules. Political and operational dictionary files have not been supplied.
+
 ## Missing values and coverage
 
 The political and system files cover a wider set of company–year keys than the other five domains. The panel retains the union of those keys. Missing domain values indicate absent source observations and should not automatically be converted to zero.
