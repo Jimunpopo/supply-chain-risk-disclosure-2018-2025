@@ -1,22 +1,24 @@
 # Dictionary and Data Term Comparison
 
-This comparison uses the supplied text files and the actual column headers of the published domain CSVs. A dictionary entry is a nonempty line with surrounding whitespace trimmed for comparison only. Repeated entries count once when comparing sets. CSV terms are taken from the `*_count` column names after removing that suffix. These operations do not rewrite the supplied files or the data.
+This comparison uses the current published dictionary files and the actual column headers of the published domain CSVs. A dictionary entry is a nonempty line with surrounding whitespace trimmed for comparison only. Repeated entries count once when comparing sets. CSV terms are taken from the `*_count` column names after removing that suffix. Comparison operations do not rewrite files. The financial dictionary was separately updated in place using the extraction procedure recorded below; the original uploaded source files and research data were not changed.
 
 ## Risk dictionaries compared with CSV columns
 
-| Domain | Unique supplied risk terms | CSV terms | Shared terms | CSV terms absent from supplied list | Supplied terms absent from CSV |
+| Domain | Unique published risk terms | CSV terms | Shared terms | CSV terms absent from published list | Published terms absent from CSV |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Environmental | 75 | 75 | 75 | 0 | 0 |
-| Financial | 67 | 107 | 67 | 40 | 0 |
+| Financial | 107 | 107 | 107 | 0 | 0 |
 | Supply and demand | 96 | 96 | 96 | 0 | 0 |
 | Logistics | 80 | 80 | 80 | 0 | 0 |
 | System | 88 | 88 | 88 | 0 | 0 |
 
 This verifies term-set correspondence, not how the dictionaries were generated or how every count was calculated. Political and operational dictionary files were not supplied and are not reconstructed from the data columns.
 
-## Financial dictionary version
+## Financial dictionary update: 67 to 107 terms
 
-The supplied financial risk file is a 67-term subset of the 107-term CSV dictionary. Its filename describes removal of neutral terms, but the files alone do not establish when that version was produced or used. The following 40 terms occur in the released financial CSV and are absent from the supplied financial risk list:
+The originally supplied financial risk file contained 67 terms. The existing repository file, `03_financial/financial_risk_terms.txt`, now contains all 107 unique terms represented by the published financial CSV. It was updated by selecting the `*_count` headers, removing the `_count` suffix and retaining the CSV column order. All original 67 terms remain present. The 40 terms below were added from those headers.
+
+The uploaded source file and all research data remain unchanged. The earlier 67-term repository version remains available in Git history. This extraction establishes correspondence with the existing data; it does not establish the original word-expansion history.
 
 - 不利因素
 - 业务发展
@@ -63,10 +65,10 @@ The supplied financial risk file is a 67-term subset of the 107-term CSV diction
 
 A seed dictionary is not assumed to be a subset of its associated risk dictionary. The observed overlaps are:
 
-| Domain | Unique seed terms | Seeds present in supplied risk dictionary | Seeds absent from supplied risk dictionary |
+| Domain | Unique seed terms | Seeds present in published risk dictionary | Seeds absent from published risk dictionary |
 | --- | ---: | ---: | ---: |
 | Environmental | 21 | 6 | 15 |
-| Financial | 12 | 10 | 2 |
+| Financial | 12 | 12 | 0 |
 | Supply and demand | 42 | 42 | 0 |
 | Logistics | 40 | 40 | 0 |
 | System | 24 | 0 | 24 |

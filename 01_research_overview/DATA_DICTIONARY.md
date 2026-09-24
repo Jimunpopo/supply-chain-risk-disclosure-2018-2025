@@ -57,7 +57,7 @@ These definitions are transcribed from the original notes; no counts, ratios or 
 
 ## Supplied seed and risk dictionaries
 
-The [dictionary catalogue](../06_risk_dictionaries/README.md) provides unchanged text files for five domains, separated into seed terms and risk terms. Environmental, supply and demand, logistics and system risk-term sets match the corresponding CSV columns. The supplied financial risk list has 67 unique terms, while the financial CSV contains 107 term-count columns. The [term comparison](../06_risk_dictionaries/TERM_ALIGNMENT.md) lists the 40 differences and explains the comparison rules. Political and operational dictionary files have not been supplied.
+The [dictionary catalogue](../06_risk_dictionaries/README.md) provides seed and risk dictionaries for five domains. All five published risk-term sets match the corresponding CSV columns. The financial risk file was updated in place from the supplied 67-term list to all 107 terms extracted from the financial CSV count-column names. The other nine dictionary files remain unchanged. The [term comparison](../06_risk_dictionaries/TERM_ALIGNMENT.md) records the 40 added terms and extraction procedure. Political and operational dictionary files have not been supplied.
 
 ## Missing values and coverage
 
