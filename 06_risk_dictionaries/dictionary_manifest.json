@@ -10,7 +10,6 @@
   "files": [
     {
       "path": "06_risk_dictionaries/02_environmental/environmental_seed_terms.txt",
-      "original_filename": "供应链环境风险种子词+相似0.45以上+显示100.txt",
       "domain": "environmental",
       "kind": "seed_terms",
       "size_bytes": 154,
@@ -26,7 +25,6 @@
     },
     {
       "path": "06_risk_dictionaries/02_environmental/environmental_risk_terms.txt",
-      "original_filename": "供应链环境风险词相似0.45以上显示100word2vec拓展.txt",
       "domain": "environmental",
       "kind": "risk_terms",
       "size_bytes": 680,
@@ -42,7 +40,6 @@
     },
     {
       "path": "06_risk_dictionaries/03_financial/financial_seed_terms.txt",
-      "original_filename": "供应链财务风险种子词+相似0.45以上+显示100.txt",
       "domain": "financial",
       "kind": "seed_terms",
       "size_bytes": 115,
@@ -60,7 +57,6 @@
     },
     {
       "path": "06_risk_dictionaries/03_financial/financial_risk_terms.txt",
-      "original_filename": "供应链财务风险词相似0.45以上显示100word2vec拓展的去中性词.txt",
       "domain": "financial",
       "kind": "risk_terms",
       "size_bytes": 1007,
@@ -127,7 +123,6 @@
     },
     {
       "path": "06_risk_dictionaries/04_supply_demand/supply_demand_seed_terms.txt",
-      "original_filename": "供应链供需风险种子词补+相似0.45以上+显示100.txt",
       "domain": "supply_demand",
       "kind": "seed_terms",
       "size_bytes": 387,
@@ -147,7 +142,6 @@
     },
     {
       "path": "06_risk_dictionaries/04_supply_demand/supply_demand_risk_terms.txt",
-      "original_filename": "供应链供需风险词补+相似0.45以上+显示100.txt",
       "domain": "supply_demand",
       "kind": "risk_terms",
       "size_bytes": 836,
@@ -163,7 +157,6 @@
     },
     {
       "path": "06_risk_dictionaries/05_logistics/logistics_seed_terms.txt",
-      "original_filename": "供应链物流风险种子词补+相似0.45以上+显示100.txt",
       "domain": "logistics",
       "kind": "seed_terms",
       "size_bytes": 373,
@@ -187,7 +180,6 @@
     },
     {
       "path": "06_risk_dictionaries/05_logistics/logistics_risk_terms.txt",
-      "original_filename": "供应链物流风险词补相似0.45以上显示100word2vec拓展.txt",
       "domain": "logistics",
       "kind": "risk_terms",
       "size_bytes": 667,
@@ -207,7 +199,6 @@
     },
     {
       "path": "06_risk_dictionaries/06_system/system_seed_terms.txt",
-      "original_filename": "供应链系统风险种子词+相似0.45以上+显示100.txt",
       "domain": "system",
       "kind": "seed_terms",
       "size_bytes": 212,
@@ -223,7 +214,6 @@
     },
     {
       "path": "06_risk_dictionaries/06_system/system_risk_terms.txt",
-      "original_filename": "供应链系统风险词相似0.45以上显示100word2vec拓展.txt",
       "domain": "system",
       "kind": "risk_terms",
       "size_bytes": 783,

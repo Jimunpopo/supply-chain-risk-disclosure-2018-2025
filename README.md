@@ -27,7 +27,7 @@ The combined panel contains **31,321 firm–year observations from 5,018 firms**
 | `03_financial_control_data` | Original financial workbook and field guide |
 | `04_data_verification` | Verification summary, file manifest, and original dated audit report |
 | `05_reading_tools` | Python tools for reading source CSVs and checking file integrity |
-| `06_risk_dictionaries` | Seed and risk dictionaries for five domains, source mapping, and term comparison |
+| `06_risk_dictionaries` | Seed and risk dictionaries for five domains, file catalogue, and term comparison |
 
 ## How the files relate
 
@@ -52,6 +52,6 @@ The tools use the Python standard library. See the [reading guide](05_reading_to
 
 This release contains **eight risk CSVs, one financial workbook, supporting documentation, and two reading and verification tools**. The seven domain CSVs are supplied in lossless ZIP archives to meet browser upload limits. After extraction, the five reformatted CSVs preserve the exact source bytes from the column header onward. The other three risk CSVs and the financial workbook remain byte-identical to their originals. English filenames support navigation, with original filenames recorded in the [source file register](01_research_overview/SOURCE_FILES.md).
 
-The dictionary section contains ten seed and risk text files for environmental, financial, supply and demand, logistics, and system risk. Political and operational dictionaries have not been supplied. All five published risk-term sets match their CSV columns. The financial risk dictionary was updated in place from 67 to 107 terms extracted from its CSV headers; the other nine files preserve the supplied originals. See the [dictionary catalogue](06_risk_dictionaries/README.md) for the source mapping and update record.
+The dictionary section contains ten seed and risk text files for environmental, financial, supply and demand, logistics, and system risk. Political and operational dictionaries have not been supplied. All five published risk-term sets match their CSV columns. The financial risk dictionary was updated in place from 67 to 107 terms extracted from its CSV headers; the other nine files preserve the supplied originals. See the [dictionary catalogue](06_risk_dictionaries/README.md) for the file catalogue and update record.
 
 The historical audit is dated **12 September 2026**. Its comments on thesis wording refer to the version reviewed on that date. This release provides source data and the audit record; it does not include the full regression code or all model output files mentioned in that report.

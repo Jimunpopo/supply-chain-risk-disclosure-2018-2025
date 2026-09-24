@@ -20,7 +20,7 @@ Counts above ignore blank lines and trim surrounding whitespace for comparison o
 
 Files identified as seed terms and risk terms are kept separately. Inclusion of seed terms in a published risk dictionary differs by domain; these files should not be automatically combined. Their contents and relationships are documented in the [term comparison](TERM_ALIGNMENT.md).
 
-The original filenames record a similarity threshold of 0.45 and a display setting of 100; several also identify Word2Vec expansion. These are filename annotations. The supplied text files do not contain the model, training corpus, similarity scores or generation code, so those settings cannot be independently verified from the lists alone. The display setting is not the number of terms in each delivered file.
+Word2Vec expansion uses a cosine similarity threshold of **0.7**. The supplied text files do not contain the model, training corpus, similarity scores or generation code, so the generation process cannot be independently reconstructed from the lists alone.
 
 ## Correspondence with the released data
 
@@ -30,4 +30,4 @@ This update documents the term set represented in the existing financial data. I
 
 ## Source files and integrity
 
-The [source register](SOURCE_FILES.md) maps clear repository filenames to the original filenames. The [dictionary manifest](dictionary_manifest.json) records SHA-256 hashes, file sizes and comparison counts for all ten files. Nine repository text files are byte-identical to their supplied sources. For the financial risk file, the manifest separately records the original 67-term source hash, the current 107-term file hash, and the CSV extraction procedure. The existing data-file manifest and its ten-file verification command remain separate.
+The [file catalogue](SOURCE_FILES.md) lists the repository files by domain and dictionary type. The [dictionary manifest](dictionary_manifest.json) records SHA-256 hashes, file sizes and comparison counts for all ten files. Nine repository text files are byte-identical to their supplied sources. For the financial risk file, the manifest separately records the original 67-term source hash, the current 107-term file hash, and the CSV extraction procedure. The existing data-file manifest and its ten-file verification command remain separate.
